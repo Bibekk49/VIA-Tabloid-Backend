@@ -1,0 +1,33 @@
+@VIATabloidAPI_HostAddress = https://localhost:7200
+
+### Get all stories
+GET {{VIATabloidAPI_HostAddress}}/api/Story
+Accept: application/json
+
+### Get a specific story
+GET {{VIATabloidAPI_HostAddress}}/api/Story/1
+Accept: application/json
+
+### Create a new story
+POST {{VIATabloidAPI_HostAddress}}/api/Story
+Content-Type: application/json
+
+{
+  "title": "Test Story",
+  "content": "This is a test story content",
+  "department": 0
+}
+
+### Update a story
+PUT {{VIATabloidAPI_HostAddress}}/api/Story/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Updated Story",
+  "content": "This is an updated story content",
+  "department": 1
+}
+
+### Delete a story
+DELETE {{VIATabloidAPI_HostAddress}}/api/Story/1

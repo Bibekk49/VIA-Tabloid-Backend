@@ -1,0 +1,31 @@
+# User-specific files
+.idea/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.dotCover
+
+# Build output
+bin/
+obj/
+
+# ASP.NET Core and EF Core
+wwwroot/
+Migrations/
+Database/
+
+# Project-specific
+/VIATabloidAPI/bin/
+/VIATabloidAPI/obj/
+/EFC/bin/
+/EFC/obj/
+/Problem-set/bin/
+/Problem-set/obj/
+/* .NET-specific generated files */
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# OSX system files
+.DS_Store

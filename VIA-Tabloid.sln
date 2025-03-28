@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC", "EFC\EFC.csproj", "{9F5FAC59-0156-4493-9D8A-23255925A27F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIATabloidAPI", "VIATabloidAPI\VIATabloidAPI.csproj", "{8056A1EA-91F0-4863-8145-95A218CD00EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F5FAC59-0156-4493-9D8A-23255925A27F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F5FAC59-0156-4493-9D8A-23255925A27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F5FAC59-0156-4493-9D8A-23255925A27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F5FAC59-0156-4493-9D8A-23255925A27F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8056A1EA-91F0-4863-8145-95A218CD00EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8056A1EA-91F0-4863-8145-95A218CD00EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8056A1EA-91F0-4863-8145-95A218CD00EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8056A1EA-91F0-4863-8145-95A218CD00EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
