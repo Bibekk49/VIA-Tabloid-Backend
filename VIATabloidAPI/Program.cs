@@ -11,6 +11,18 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new() { Title = "VIA Tabloid API", Version = "v1" });
 });
 
+// Add CORS policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp", 
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:5173") // Default Vite dev server port
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
+
 // Add database context
 builder.Services.AddDbContext<VIATabloidContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -23,6 +35,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "VIA Tabloid API v1"));
 }
+
+// Add CORS middleware - important to add this before other middleware
+app.UseCors("AllowReactApp");
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
